@@ -3,7 +3,7 @@ from django.core.validators import MinValueValidator, MaxValueValidator, MinLeng
 
 class Estudante(models.Model):
 
-    matr = models.CharField("Matrícula", max_length=255, unique=True)
+    matricula = models.CharField("Matrícula", max_length=255, unique=True)
     nome = models.CharField("Nome", max_length=255)
     social = models.CharField("Nome social", max_length=255, null=True, blank=True)
     cpf = models.CharField(
