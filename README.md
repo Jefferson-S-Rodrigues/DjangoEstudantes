@@ -36,7 +36,7 @@ python3 -m pip install -r requirements.txt
 ### Configurar o Banco de Dados
 
 ```console
-python3 manage.py makemigrations Curso Estudante
+python3 manage.py makemigrations Estudante
 python3 manage.py migrate
 ```
 
