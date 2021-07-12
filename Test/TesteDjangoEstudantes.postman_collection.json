@@ -1,0 +1,529 @@
+{
+	"info": {
+		"_postman_id": "a4e25490-b66d-4e15-9432-a560105b18a3",
+		"name": "TesteDjangoEstudantes",
+		"description": "Teste da API de Estudantes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Filtro Busca Cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/curso?nome=ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "ca"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Curso",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":\"0002\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Editar Curso",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\": \"0002\",\r\n    \"nome\": \"Literatura\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Curso Matemática",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "codigo",
+						"value": "0002",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "nome",
+						"value": "Português",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":\"0001\",\r\n    \"nome\":\"Matemática\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "0001",
+							"disabled": true
+						},
+						{
+							"key": "nome",
+							"value": "Matemática",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar Curso Literatura",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "codigo",
+						"value": "0002",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "nome",
+						"value": "Lite",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"codigo\":\"0002\",\r\n    \"nome\":\"Lite\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/curso",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "0001",
+							"disabled": true
+						},
+						{
+							"key": "nome",
+							"value": "Matemática",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Estudantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir Estudante Jefferson",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Jefferson\",\r\n    \"nascimento\":\"1990-03-03\",\r\n    \"cpf\":\"98787676543\",\r\n    \"matricula\":\"2015026432\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir Estudante Heitor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Heitor\",\r\n    \"social\":\"Heitor\",\r\n    \"nascimento\":\"2018-02-22\",\r\n    \"cpf\":\"23498723478\",\r\n    \"matricula\":\"2030002190\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+
+		{
+			"name": "Editar Estudante",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"matricula\":\"2030002190\",\r\n    \"nome\": \"Karol\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Estudante",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"matricula\":\"2030002190\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/estudante",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estudante"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Matricular",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"matricula\":\"2030002190\",\r\n    \"codigo\":\"0002\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cursar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cursar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cursando Jefferson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cursar?matricula=2015026432",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cursar"
+					],
+					"query": [
+						{
+							"key": "matricula",
+							"value": "2015026432"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cursando Matemática",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cursar?codigo=0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cursar"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Cursando",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/cursar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cursar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Matérias Jefferson",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/curso?matricula=2015026432",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"curso"
+					],
+					"query": [
+						{
+							"key": "matricula",
+							"value": "2015026432"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Estudantes Matemática",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/estudante?codigo=0001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"estudante"
+					],
+					"query": [
+						{
+							"key": "codigo",
+							"value": "0001"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Matrícula",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"matricula\":\"2015026432\",\r\n    \"codigo\":\"0001\",\r\n    \"nota\":100,\r\n    \"ativo\":false\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cursar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cursar"
+					],
+					"query": [
+						{
+							"key": "matricula",
+							"value": "2015",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Matrícula",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"matricula\":\"2015026432\",\r\n    \"codigo\":\"0001\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/cursar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"cursar"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
