@@ -40,4 +40,4 @@ class Cursando(models.Model):
     estudante = models.ForeignKey('Estudante', on_delete=models.CASCADE)
     curso = models.ForeignKey('Curso', on_delete=models.CASCADE)
     ativo = models.BooleanField('Ativo', default=True)
-    nota = models.IntegerField('Nota', default=0, max_length=3, validators=[MaxValueValidator(100), MinValueValidator(0)])
+    nota = models.IntegerField('Nota', default=0, validators=[MaxValueValidator(100), MinValueValidator(0)])
